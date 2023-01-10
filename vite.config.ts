@@ -27,4 +27,12 @@ export default defineConfig({
     //   "@utils": path.resolve(__dirname, "src/utils"),
     // },
   },
+  //引用全局scss
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData: `@import "@/style/index.scss";`,
+      },
+    },
+  },
 });
