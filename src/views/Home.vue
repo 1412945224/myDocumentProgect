@@ -1,10 +1,7 @@
 <script setup lang="ts">
-import Canvas from "@components/Canvas.vue";
 </script>
 <template>
-  <div class="home">
-    <Canvas></Canvas>
-  </div>
+  <div class="home"> </div>
 </template>
 <style lang="scss" scoped>
 .home {
