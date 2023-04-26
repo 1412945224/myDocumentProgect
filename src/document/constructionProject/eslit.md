@@ -174,7 +174,7 @@ unpackage
 
 新建.lintstagedrc 文件
 
-````
+```
 //.lintstagedrc
 
 {
@@ -223,7 +223,6 @@ rules: {
 
 //提交格式为 <type>(scope?): <subject>
 
-/\*
 
 - @Description: commit-msg 提交信息格式规范
 
@@ -254,11 +253,10 @@ rules: {
 
 -     - test: 测试用例修改
 
-- - scope：一个可选的修改范围。用于标识此次提交主要涉及到代码中哪个模块。
+-     - scope：一个可选的修改范围。用于标识此次提交主要涉及到代码中哪个模块。
 
-- - Subject：一句话描述此次提交的主要内容，做到言简意赅
+-    - Subject：一句话描述此次提交的主要内容，做到言简意赅
 
-    \*/
 
 使用方式
 
