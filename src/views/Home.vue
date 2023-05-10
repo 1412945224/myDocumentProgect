@@ -1,7 +1,8 @@
 <script setup lang="ts">
+import test from './test.vue';
 </script>
 <template>
-  <div class="home"> </div>
+  <div class="home"> <test></test> </div>
 </template>
 <style lang="scss" scoped>
 .home {
