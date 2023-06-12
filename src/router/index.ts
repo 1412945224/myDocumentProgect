@@ -5,6 +5,11 @@ const routes: Array<RouteRecordRaw> = [
     path: "/",
     component: () => import("@/views/Home.vue"),
   },
+  {
+    name: "About",
+    path: "/About",
+    component: () => import("@/views/About.vue"),
+  }
 ];
 const router = createRouter({
   history: createWebHistory(),

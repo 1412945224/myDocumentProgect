@@ -2,29 +2,24 @@
 import { useRouter } from "vue-router";
 const router = useRouter();
 function dynamicRoutes() {
-  const localFiles = import.meta.glob("@/views/**/*.vue");
+  const localFiles = import.meta.glob("./../views/**/*.vue");
   console.log(localFiles, "localFiles");
   const lowercasePath: { [key: string]: any } = {};
   for (const key in localFiles) {
+    
     lowercasePath[key.toLowerCase()] = localFiles[key];
   }
   console.log(lowercasePath, "lowercasePath");
-  console.log(router.options.routes)
 }
 const getGetDiagram = async () => {
   dynamicRoutes();
-  router.push("/About");
+  router.push("/");
 };
 </script>
 
 <template>
   <div>
     <el-button @click="getGetDiagram">请求</el-button>
-
-
-    <div>
-      
-    </div>
   </div>
 </template>
 <style lang="scss" scoped></style>
