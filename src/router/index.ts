@@ -1,21 +1,16 @@
-import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
-const routes: Array<RouteRecordRaw> = [
-  {
-    name: "首页",
-    path: "/",
-    component: () => import("@/views/Home.vue"),
-  },
-  {
-    name: "About",
-    path: "/About",
-    component: () => import("@/views/About.vue"),
-  }
-];
+import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router';
+// 静态路由
+import { staticRoute } from '@/router/staticRoute';
+// 功能性路由
+import { alityRoute } from '@/router/alityRoute';
+const routes = [...staticRoute, ...alityRoute];
 const router = createRouter({
+  // 路由模式
   history: createWebHistory(),
   routes,
 });
-
-router.beforeEach(() => {});
-router.afterEach((to) => {});
+// 路由守卫 跳转路由之前
+router.beforeEach(() => { });
+// 路由守卫 跳转路由之后
+router.afterEach((to) => { });
 export default router;

@@ -22,7 +22,7 @@
     "paths": {
       // 路径映射，相对于baseUrl
       "@/*": ["./src/*"],
-      "@utils/*": ["./src/utils/*"],
+      "@utils/*": ["./src/uilts/*"],
       "@components/*": ["./src/components/*"]
     }
   },

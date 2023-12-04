@@ -10,7 +10,7 @@ import { ref } from "vue";
  *
  * @param top 最顶级
  */
-export const OneDimensionalArrayToTreeStructureArray = (
+ const OneDimensionalArrayToTreeStructureArray = (
   data: any,
   parent: string,
   nowaday: string,
@@ -37,3 +37,4 @@ export const OneDimensionalArrayToTreeStructureArray = (
   });
   return reassembledArray;
 };
+export { OneDimensionalArrayToTreeStructureArray}
